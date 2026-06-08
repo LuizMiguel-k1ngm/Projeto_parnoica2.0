@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use Symfony\Contracts\Service\Attribute\Required;
 
 class AuthController extends Controller
@@ -39,7 +40,23 @@ class AuthController extends Controller
         $login = $request->input('text_login');
         $password = $request->input('text_password');
 
-        echo 'OK';
+        //test connection
+
+        try{
+            DB::connection()->getPdo();
+            echo 'connection OK';
+
+        }catch(\PDOException $e){
+            echo 'Connection failed';
+
+        }
+
+        echo  ' FIM';
+
+    
+
+
+
     }
 
 
