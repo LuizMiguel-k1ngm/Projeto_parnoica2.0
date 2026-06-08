@@ -9,22 +9,9 @@ class MainController extends Controller
    
 
 public function index(){
-    return view('main');
+    return view('layout/main_layout');
     
 }
 
-
-
-public function page2(){
-    return view('page2');
-    
-}
-
-
-
-public function page3(){
-    return view('page3');
-    
-}
 
 }

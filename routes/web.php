@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\MainController;
+use App\Http\Controllers\PainelController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,16 +19,17 @@ use Illuminate\Support\Facades\Route;
 //AUTH ROUTES
 
 Route::get('/login', [AuthController::class, 'login']);
+Route::post('/loginSubmit', [AuthController::class, 'loginSubmit']);
 Route::get('/logout', [AuthController::class, 'logout']);
 
 
 
 
+Route::get('/painel',[PainelController::class, 'painel_colaborador']);
 
 
 
 
 
-Route::get('/main', [MainController::class, 'index']);
-Route::get('/page2', [MainController::class, 'page2']);
-Route::get('/page3', [MainController::class, 'page3']);
+
+Route::get('/home', [MainController::class, 'index']);
