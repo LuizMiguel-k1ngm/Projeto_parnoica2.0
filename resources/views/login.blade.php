@@ -7,7 +7,21 @@
     justify-content: center;
     align-items: center;
     margin: 38%;
+    border-radius: 20px;  
   }
+#error2{
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+    margin-left: 40% ;
+    margin-right: 40%;
+    border-radius: 20px;
+    
+   
+
+}
+
+
 </style>
 
 <div>
@@ -36,9 +50,23 @@
 
     </div>
     <button type="submit" class="btn btn-primary">Submit</button>
+  {{-- invalid login --}}
 
+  @if(session('loginError'))
+    <div class="alert alert-danger text-center" id="error2">
+      {{session('loginError')}}
+    </div>
+  @endif
 
   </form>
+
+  <!-- {{-- invalid login --}}
+
+  @if(session('loginError'))
+    <div class="alert alert-danger text-center m-70" >
+      {{session('loginError')}}
+    </div>
+  @endif -->
 
 </div>
 

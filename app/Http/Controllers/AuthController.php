@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Symfony\Contracts\Service\Attribute\Required;
@@ -40,22 +41,41 @@ class AuthController extends Controller
         $login = $request->input('text_login');
         $password = $request->input('text_password');
 
-        //test connection
+        // check if the user exists
+        //and use the deleted_at as a parameter to find the user
+        //if the user don't exists, it returns to home page
+        $user = User::where('email', $login)
+                            ->where('deleted_at', NULL)
+                            ->first();
 
-        try{
-            DB::connection()->getPdo();
-            echo 'connection OK';
+//verify if user and password exists in the db
+//if not exists, the user gonna redirect to home page
+//login error it's like a variable and the sequence has the message
+    if(!$user){
+        return redirect()
+                ->back()
+                ->withInput()
+                ->with('loginError', 'Login e/ou senha incorretos');
 
-        }catch(\PDOException $e){
-            echo 'Connection failed';
+    }
 
-        }
+    if(!password_verify($password, $user->password)){
+        return redirect()
+                ->back()
+                ->withInput()
+                ->with('loginError', 'Login e/ou senha incorretos!');
 
-        echo  ' FIM';
+    }
 
-    
+    // update last login
+    $user->last_login = date('Y-m-d H:i:s');
+    $user->save();
 
 
+
+    echo '<pre>';
+    print_r($user);
+     
 
     }
 
