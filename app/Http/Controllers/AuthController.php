@@ -55,7 +55,7 @@ class AuthController extends Controller
         return redirect()
                 ->back()
                 ->withInput()
-                ->with('loginError', 'Login e/ou senha incorretos');
+                ->with('loginError', 'Login e/ou senha incorretos.');
 
     }
 
@@ -63,27 +63,33 @@ class AuthController extends Controller
         return redirect()
                 ->back()
                 ->withInput()
-                ->with('loginError', 'Login e/ou senha incorretos!');
+                ->with('loginError', 'Login e/ou senha incorretos.');
 
     }
-
     // update last login
     $user->last_login = date('Y-m-d H:i:s');
     $user->save();
 
+    //login user
+    session([
+    'user' =>[
+        'id' =>$user->id,
+        'name' =>$user-> username
+    ]
 
+    ]);
 
-    echo '<pre>';
-    print_r($user);
-     
+   //redirect to home
+    return redirect()->to('/');
+
 
     }
 
-
-
-
     public function logout()
-    {
-        echo 'logout';
+    {      
+        //logout from the aplication
+
+        session()->forget('user');
+        return redirect()->to('/login');
     }
 }
