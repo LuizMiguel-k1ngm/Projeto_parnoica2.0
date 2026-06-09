@@ -23,13 +23,7 @@ Route::post('/loginSubmit', [AuthController::class, 'loginSubmit']);
 Route::get('/logout', [AuthController::class, 'logout']);
 
 
-
-
 Route::get('/painel',[PainelController::class, 'painel_colaborador']);
-
-
-
-
 
 
 Route::get('/home', [MainController::class, 'index']);
