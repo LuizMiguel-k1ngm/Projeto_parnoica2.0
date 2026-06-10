@@ -12,5 +12,5 @@ class PainelController extends Controller
     }
 
 
-    //
+   
 }

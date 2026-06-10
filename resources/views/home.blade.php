@@ -7,14 +7,8 @@
     }
 </style>
 
-
-
 <!-- // construir a home page -->
 <div class="container">
-
-
-
-
 
 
 </div>
