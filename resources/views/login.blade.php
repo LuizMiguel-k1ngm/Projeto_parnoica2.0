@@ -1,4 +1,4 @@
-@extends('layout.main_layout')
+@extends('layout.top_bar')
 @section('content')
 
 

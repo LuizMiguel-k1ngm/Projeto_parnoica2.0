@@ -56,12 +56,9 @@
                     </li> -->
                 </ul>
 
-               <a href="" class="text-info me-5">[username]</a>
                 <form class="d-flex" role="search">
              
-                    <a href="{{route('logout')}}" class="me-3">
-                        <i class="bi bi-box-arrow-right text-danger"></i>
-                    </a>
+        
                
                 </form>
             </div>

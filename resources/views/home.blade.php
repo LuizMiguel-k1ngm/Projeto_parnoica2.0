@@ -1,12 +1,10 @@
 @extends('layout.main_layout')
-@section('content')
+@section('content') 
+
+
 
 <!-- // construir a home page -->
 <div class="container">
-
-
-
- 
 
 
 

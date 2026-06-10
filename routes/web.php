@@ -22,16 +22,15 @@ use Illuminate\Support\Facades\Route;
 
 Route::middleware([CheckIsNotLogged::class])->group(function(){
 
-    Route::get('/login', [AuthController::class, 'login']);
+    Route::get('/login', [AuthController::class, 'login']) -> name('login');
     Route::post('/loginSubmit', [AuthController::class, 'loginSubmit']);
 
 });
 
-
 Route::middleware(CheckIsLogged::class)->group(function(){
     
-    Route::get('/painel',[PainelController::class, 'painel_colaborador']);
-    Route::get('/', [MainController::class, 'index']);
-    Route::get('/logout', [AuthController::class, 'logout']);
+    Route::get('/painel',[PainelController::class, 'painel_colaborador'])->name('painel_colaborador');
+    Route::get('/', [MainController::class, 'index'])->name('home');
+    Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
 });
 
