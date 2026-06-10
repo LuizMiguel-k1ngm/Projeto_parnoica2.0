@@ -12,9 +12,8 @@
 </head>
 
 <style>
-
-    body{
-        background-color:#002b51;
+    body {
+        background-color: #002b51;
         color: white;
     }
 </style>
@@ -24,7 +23,7 @@
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
             <a class="navbar-brand" href='{{route("home")}}'>
-               <img src="{{ asset('img/logo.png') }}" alt="Logo">
+                <img src="{{ asset('img/logo.png') }}" alt="Logo">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -42,27 +41,30 @@
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Dropdown
                         </a> -->
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
                     </li>
                     <!-- <li class="nav-item">
                         <a class="nav-link disabled" aria-disabled="true">Disabled</a>
                     </li> -->
                 </ul>
 
-               <a href="" class="text-info me-5">[username]</a>
+                <a href="" class="text-info me-2 d-flex align-items-center gap-2 me-5">
+                    <i class="bi bi-person-circle fs-5"></i>
+                    <span>Olá, {{ $user['name'] }}</span>
+                </a>
                 <form class="d-flex" role="search">
-             
-                    <a href="{{route('logout')}}" class="me-3">
+
+                    <a href="{{route('logout')}}" class="me-4">
                         <i class="bi bi-box-arrow-right text-danger"></i>
                     </a>
-               
+
                 </form>
             </div>
         </div>
