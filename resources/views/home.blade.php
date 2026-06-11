@@ -14,10 +14,12 @@
 
 <!-- // construir a home page -->
 <div class="container">
+@if(session('user') && session('user')['cargo'] === 'ADM')
+    @include('menu_adm')
+@else
+    @include('menu_funcionario')
+@endif
 
-
-
-@include('menu_adm');
 
 
 

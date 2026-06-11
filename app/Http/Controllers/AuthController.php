@@ -74,7 +74,8 @@ class AuthController extends Controller
     session([
     'user' =>[
         'id' =>$user->id,
-        'name' =>$user-> username
+        'name' =>$user-> name,
+        'cargo' => $user->cargo
     ]
 
     ]);
