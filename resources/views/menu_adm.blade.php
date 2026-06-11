@@ -17,10 +17,10 @@
                  <i class="bi bi-search"></i> CONSULTAS
              </button>
              <ul class="dropdown-menu">
-                 <li><a class="dropdown-item" href="#">FRIGOBAR</a></li>
-                 <li><a class="dropdown-item" href="#">CLIENTE</a></li>
-                 <li><a class="dropdown-item" href="#">ACOMODAÇÃO</a></li>
-                 <li><a class="dropdown-item" href="#">COLABORADOR</a></li>
+                 <li><a class="dropdown-item" href="{{ route('consulta.frigobar') }}">FRIGOBAR</a></li>
+                 <li><a class="dropdown-item" href="{{route ('consulta.cliente')}}">CLIENTE</a></li>
+                 <li><a class="dropdown-item" href="{{route('consulta.acomodacao')}}">ACOMODAÇÃO</a></li>
+                 <li><a class="dropdown-item" href="{{route('consulta.colaborador')}}">COLABORADOR</a></li>
              </ul>
          </div>
          <div class="dropdown mt-3">

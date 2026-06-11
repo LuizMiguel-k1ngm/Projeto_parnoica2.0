@@ -12,5 +12,31 @@ class PainelController extends Controller
     }
 
 
+    // CONSULTAS
+
+    public function cliente()
+    {
+        return view('consulta.consulta_cliente');
+    }
+
+
+    public function colaborador()
+    {
+        return view('consulta.consulta_colaborador');
+    }
+
+
+   public function frigobar()
+    {
+        return view('consulta.consulta_frigobar');
+    }
+
+      public function acomodacao()
+    {
+        return view('consulta.consulta_acomodacao');
+    }
+
    
+
+
 }

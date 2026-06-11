@@ -32,5 +32,26 @@ Route::middleware(CheckIsLogged::class)->group(function(){
     Route::get('/painel',[PainelController::class, 'painel_colaborador'])->name('painel_colaborador');
     Route::get('/', [MainController::class, 'index'])->name('home');
     Route::get('/logout', [AuthController::class, 'logout'])->name('logout');
+
+
+    //CONSULTAS
+Route::get('/consulta/frigobar', [PainelController::class, 'frigobar'])->name('consulta.frigobar');
+Route::get('/consulta/cliente', [PainelController::class, 'cliente'])->name('consulta.cliente');
+Route::get('/consulta/acomodacao', [PainelController::class, 'acomodacao'])->name('consulta.acomodacao');
+Route::get('/consulta/colaborador', [PainelController::class, 'colaborador'])->name('consulta.colaborador');
+
+
+
+    // CADASTRO
+
+
+    //RECEPÇÃO
+
+
+    //RELATÓRIO E DASHBORD
+
+
+
+
 });
 

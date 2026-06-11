@@ -42,13 +42,6 @@
 
 
 
-
-
-
-
-
-
-
  <!-- //coisas dentro da pagina  -->
 
  <div class="card-group mt-3">
