@@ -1,3 +1,7 @@
+@extends('layout.main_layout')
+@section('content')
 <div>
-    <!-- Always remember that you are absolutely unique. Just like everyone else. - Margaret Mead -->
+  <p>check-out</p>
 </div>
+
+@endsection

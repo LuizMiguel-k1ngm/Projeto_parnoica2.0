@@ -18,10 +18,10 @@
                  <i class="bi bi-person-fill-add"></i> CADASTRO
              </button>
              <ul class="dropdown-menu">
-                 <li><a class="dropdown-item" href="#">FRIGOBAR</a></li>
-                 <li><a class="dropdown-item" href="#">ITENS</a></li>
-                 <li><a class="dropdown-item" href="#">CONSUMO</a></li>
-                 <li><a class="dropdown-item" href="#">ACOMODAÇÃO</a></li>
+                 <li><a class="dropdown-item" href="{{route('cadastro.frigobar')}}">FRIGOBAR</a></li>
+                 <li><a class="dropdown-item" href="{{route('cadastro.itens')}}">ITENS</a></li>
+                 <li><a class="dropdown-item" href="{{route('cadastro.consumo')}}">CONSUMO</a></li>
+                 <li><a class="dropdown-item" href="{{route('cadastro.acomodacao')}}">ACOMODAÇÃO</a></li>
              </ul>
          </div>
 
@@ -30,18 +30,16 @@
                  <i class="bi bi-telephone-fill"></i> RECEPÇÃO
              </button>
              <ul class="dropdown-menu">
-                 <li><a class="dropdown-item" href="#">CADASTRO CLIENTE</a></li>
-                 <li><a class="dropdown-item" href="#">CADASTRO RESERVA</a></li>
-                 <li><a class="dropdown-item" href="#">CHECK-IN</a></li>
-                 <li><a class="dropdown-item" href="#">CHECK-OUT</a></li>
+                 <li><a class="dropdown-item" href="{{route('cadastro.cliente')}}">CADASTRO CLIENTE</a></li>
+                 <li><a class="dropdown-item" href="{{route('cadastro.reserva')}}">CADASTRO RESERVA</a></li>
+                 <li><a class="dropdown-item" href="{{route('cadastro.check_in')}}">CHECK-IN</a></li>
+                 <li><a class="dropdown-item" href="{{route('cadastro.check_out')}}">CHECK-OUT</a></li>
              </ul>
          </div>
 
      </div>
  </div>
-
-
-
+ 
  <!-- //coisas dentro da pagina  -->
 
  <div class="card-group mt-3">

@@ -1,3 +1,7 @@
+@extends('layout.main_layout')
+@section('content')
 <div>
-    <!-- Knowing is not enough; we must apply. Being willing is not enough; we must do. - Leonardo da Vinci -->
+  <p>Check-in</p>
 </div>
+
+@endsection

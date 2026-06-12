@@ -1,3 +1,8 @@
+@extends('layout.main_layout')
+@section('content')
+
 <div>
-    <!-- Nothing worth having comes easy. - Theodore Roosevelt -->
+    <p>consulta acomodacao</p>
 </div>
+
+@endsection

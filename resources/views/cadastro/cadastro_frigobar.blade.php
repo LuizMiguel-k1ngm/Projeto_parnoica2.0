@@ -1,3 +1,8 @@
+@extends('layout.main_layout')
+@section('content')
+
 <div>
-    <!-- It is quality rather than quantity that matters. - Lucius Annaeus Seneca -->
+    <p>cadastro frigobar</p>
 </div>
+
+@endsection

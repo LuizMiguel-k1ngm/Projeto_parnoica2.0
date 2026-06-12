@@ -1,3 +1,8 @@
+@extends('layout.main_layout')
+@section('content')
+
 <div>
-    <!-- Live as if you were to die tomorrow. Learn as if you were to live forever. - Mahatma Gandhi -->
+    <p>cadastro colaborador</p>
 </div>
+
+@endsection

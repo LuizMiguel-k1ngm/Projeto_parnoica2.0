@@ -1,3 +1,8 @@
+@extends('layout.main_layout')
+@section('content')
+
 <div>
-    <!-- Well begun is half done. - Aristotle -->
+    <p>cadastro consumo</p>
 </div>
+
+@endsection

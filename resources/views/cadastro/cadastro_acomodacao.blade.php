@@ -1,3 +1,8 @@
+@extends('layout.main_layout')
+@section('content')
 <div>
-    <!-- Walk as if you are kissing the Earth with your feet. - Thich Nhat Hanh -->
+<p>cadastro acomodacao</p>
 </div>
+
+
+@endsection

@@ -1,3 +1,9 @@
+@extends('layout.main_layout')
+@section('content')
+
 <div>
-    <!-- People find pleasure in different ways. I find it in keeping my mind clear. - Marcus Aurelius -->
+   <p>consulta frigobar</p>
 </div>
+
+
+@endsection

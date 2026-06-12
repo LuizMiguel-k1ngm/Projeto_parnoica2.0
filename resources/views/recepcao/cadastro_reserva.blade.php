@@ -1,3 +1,6 @@
+@extends('layout.main_layout')
+@section('content')
 <div>
-    <!-- Well begun is half done. - Aristotle -->
+    <p>Cadastro reserva recepção</p>
 </div>
+@endsection

@@ -1,3 +1,7 @@
+@extends('layout.main_layout')
+@section('content')
 <div>
-    <!-- Smile, breathe, and go slowly. - Thich Nhat Hanh -->
+    <p>cadastro acesso  colaborador</p>
 </div>
+
+@endsection
