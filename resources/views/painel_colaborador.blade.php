@@ -3,7 +3,7 @@
 <div>
 
 
-<p>painel do colaborador</p>
+    <p>painel do colaborador</p>
 
 
 
